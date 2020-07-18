@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_header {
+    background-image: url("./img/tbl_cover.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-color: rgb(44, 21, 13);
+    opacity: 2;
+    height: 60vh;
+}
+
+.navbar-brand {
+    color: peru !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: rgb(218, 101, 47) !important;
+}
+
+.media-container {
+    margin-top: 5em;
+    border: 1px solid burlywood;
+}
+
+.mediatitle {
+    text-align: center;
+}
+
+.addmedia {
+    height: 20vh;
+    margin-top: 5em;
+}
