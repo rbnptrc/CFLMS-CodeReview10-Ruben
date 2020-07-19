@@ -3,14 +3,13 @@
 <?php 
 require_once 'actions/db_conn.php';
 
-if ($_GET["id"]){
-    $id = $_GET['Publisher_ID'];
+if (isset($_GET['id'])){
+    $p_id = $_GET['id'];
 
 
-   echo $sql = "SELECT * FROM publisher WHERE Publisher_ID = $id";
+   $sql = "SELECT * FROM publisher INNER JOIN media ON media.fk_Publisher = publisher.Publisher_ID WHERE Publisher_ID = $p_id";
    $result = $connect->query($sql);
    
-   $connect->close();
 }
 ?>
 
@@ -33,7 +32,6 @@ if ($_GET["id"]){
                <td>" .$row['mediastyle']."</td><br>
                <td>" .$row['status']."</td><br>
                <td>" .$row['fk_Publisher']."</td><br>
-               <td>" .$row['fk_Author']."</td><br>
 
            </tr>" ;
        
@@ -54,7 +52,6 @@ if ($_GET["id"]){
         <td>" .$value['mediastyle']."</td><br>
         <td>" .$value['status']."</td><br>
         <td>" .$value['fk_Publisher']."</td><br>
-        <td>" .$value['fk_Author']."</td><br>
 
     </tr>" ;
     }
