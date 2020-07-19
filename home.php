@@ -6,14 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>TBL</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row mt-5">
             <?php
-
             require_once 'actions/db_conn.php';
 
             $sql = "SELECT * FROM media";

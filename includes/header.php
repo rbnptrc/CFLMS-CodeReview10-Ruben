@@ -6,7 +6,7 @@
     <title>The Big Library</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Nav -->
@@ -29,7 +29,7 @@
             <h1 class="display-4">The Big Library</h1>
             <p class="lead"> Raed to Read</p>
             <p>How about a date with a good book.</p>
-            <a class="btn btn-primary btn-lg" href="showmore.php.php" role="button">See List</a>
+            <a class="btn btn-primary btn-lg" href="publishers.php" role="button">See Publishers</a>
         </div>
     </header>
 

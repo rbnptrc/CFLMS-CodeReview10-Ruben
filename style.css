@@ -37,3 +37,15 @@
     height: 20vh;
     margin-top: 5em;
 }
+
+.list-group {
+    text-align: center;
+    margin-top: 2em;
+    width: 50em;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 5rem;
+}

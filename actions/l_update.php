@@ -3,12 +3,14 @@
 <?php 
 
 require_once 'db_conn.php';
+error_reporting(E_ALL ^  E_NOTICE);
 
 if($_POST){
-    $id = $_POST['id'];
     $title = $_POST['title'];
     $descrpt = $_POST['descrpt'];
     $mediastyle = $_POST['mediastyle'];
+
+    $id = $_POST['Media_ID'];
 
     $sql = "UPDATE media SET title='$title', descrpt='$descrpt', mediastyle='$mediastyle' WHERE Media_ID = $id ";
 
