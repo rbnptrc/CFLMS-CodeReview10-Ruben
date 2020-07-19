@@ -4,10 +4,10 @@
 
 require_once 'actions/db_conn.php';
 
-if ($_GET["ID"]) {
-   $id = $_GET["ID"];
+if ($_GET["id"]) {
+   $id = $_GET["id"];
 
-   $sql = "SELECT * FROM tbl WHERE TBL_ID = $id" ;
+   $sql = "SELECT * FROM media WHERE Media_ID = ${id}" ;
    $result = $connect->query($sql);
    $row = $result->fetch_assoc();
 
@@ -38,7 +38,7 @@ $connect->close();
         <form action="actions/l_delete.php" method="post">
 
 
-            <input type="hidden" name="ID" placeholder="ID" value="<?= $row['TBL_ID'] ?>"/>
+            <input type="hidden" name="id" placeholder="id" value="<?= $row['Media_ID'] ?>"/>
 
 
             <button type="submit" class="btn btn-primary">Delete Media</button>

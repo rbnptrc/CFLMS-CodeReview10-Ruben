@@ -2,12 +2,13 @@
 
 require_once 'db_conn.php';
 
-if($_POST){
-    $id = $_POST["ID"];
+if ($_POST){
+    $id = $_POST["id"];
 
-    $sql = "DELETE FROM tbl WHERE TBL_ID = $id" ;
+    $sql = "DELETE FROM media WHERE Media_ID = ${id}" ;
     if($connect->query($sql) === TRUE){
-        echo "deleted succes <br> <a href='../home.php'>Back to Home</a>";
+        echo "<h3>deleted succes </h3><br> ";
+        echo "<a href='../home.php'><button type='button'>Back to Home</button></a>";
     } else {
         echo "error: it did not happened";
     }

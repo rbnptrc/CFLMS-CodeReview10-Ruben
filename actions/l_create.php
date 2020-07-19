@@ -10,7 +10,7 @@ if ($_POST){
 
 
     $sql = "INSERT INTO media (title, ISBN, descrpt) VALUES ('$title', '$ISBN','$descrpt' )";
-    if (mysqli_query($connect, $sql)) {
+    if($connect->query($sql) === TRUE) {
         echo "New Record Successfully Created<br>";
         echo "<a href='../create.php'><button type='button'>Add More</button></a>";
         echo "<a href='../home.php'><button type='button'>Home</button></a>";

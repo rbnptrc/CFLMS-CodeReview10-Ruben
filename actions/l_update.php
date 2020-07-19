@@ -10,7 +10,7 @@ if($_POST){
     $descrpt = $_POST['descrpt'];
     $mediastyle = $_POST['mediastyle'];
 
-    $sql = "UPDATE media SET title='$title', descrpt='$descrpt', mediastyle='$mediastyle' WHERE Media_ID=$id ";
+    $sql = "UPDATE media SET title='$title', descrpt='$descrpt', mediastyle='$mediastyle' WHERE Media_ID = $id ";
 
     if($connect->query($sql) === TRUE)
     {

@@ -38,9 +38,9 @@ if($result->num_rows == 0){
                   <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1415375471l/119073.jpg" class="card-img-top">
                           <p class="card-text">Description: ' . $value["descrpt"] . '</p>
                           <p class="card-text">Type: ' . $value["mediastyle"] . '</p>
-                          <a href="showmore.php?id=' . $value["TBL_ID"] . '" class="btn btn-primary">Show More</a>
-                          <a href="update.php?id=' . $value["TBL_ID"] . '" class="btn btn-warning">Update</a>
-                          <a href="delete.php?id=' . $value["TBL_ID"] . '" class="btn btn-danger">Delete</a>
+                          <a href="showmore.php?id=' . $value["id"] . '" class="btn btn-primary">Show More</a>
+                          <a href="update.php?id=' . $value["id"] . '" class="btn btn-warning">Update</a>
+                          <a href="delete.php?id=' . $value["id"] . '" class="btn btn-danger">Delete</a>
                       </div>
                   </div>
               </div>

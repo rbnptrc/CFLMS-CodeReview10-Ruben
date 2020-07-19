@@ -24,7 +24,7 @@
         <form class="addmedia" action="actions/l_create.php" method="post">
 
 
-            <input type="hidden" name="ID" placeholder="id" />
+            <input type="hidden" name="id" placeholder="id" />
 
             Title
             <input type="text" name="title" placeholder="The title" />
